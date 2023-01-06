@@ -16,7 +16,7 @@ def parse_requirements(filename):
 requirements = parse_requirements(os.path.join(this_dir, "requirements.txt"))
 dev_requirements = parse_requirements(os.path.join(this_dir, "requirements-dev.txt"))
 setup(
-    name="roboflo",
+    name="mongoshelve",
     version="{{VERSION_PLACEHOLDER}}",
     description="Scheduler for automation tasks that involve multiple stations/workers.",
     long_description=long_description,
