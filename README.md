@@ -16,7 +16,7 @@ client = MongoClient(
     password='pass',
     authSource='admin',
 )
-database = mc["your_database_name"]
+database = client["your_database_name"]
 collection = database["your_collection_name"]
 ```
 
