@@ -3,18 +3,18 @@ name: Format code using Black
 on: [push, pull_request]
 
 jobs:
-  format-package:
+  format-using-black:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: psf/black@stable
         with:
-          src: "./mongoshelve"
+          src: "./mongoshelve ./tests"
           
-  format-tests:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v3
-        - uses: psf/black@stable
-          with:
-            src: "./tests"
+  # format-tests:
+  #     runs-on: ubuntu-latest
+  #     steps:
+  #       - uses: actions/checkout@v3
+  #       - uses: psf/black@stable
+  #         with:
+  #           src: "./tests"
