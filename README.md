@@ -1,3 +1,5 @@
+[![codecov](https://codecov.io/gh/rekumar/mongoshelve/branch/main/graph/badge.svg?token=8SY9L9CVO1)](https://codecov.io/gh/rekumar/mongoshelve)
+
 # mongoshelve
 Persistent Python lists and dictionaries in MongoDB.
 
