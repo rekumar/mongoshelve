@@ -62,7 +62,7 @@ my_list.pop()
 
 Both `MongoList` and `MongoDict` have an optional `default_value` parameter that can be used to set initial value of the list or dict in the MongoDB document. If `default_value` is not specified (default), the list or dict will be empty.
 
-When `MongoList`/`MongoDict` is instantiated, it will check if the document exists in the MongoDB collection. If a document by this name already exists, the stored values will not be changed. If it does not, it will create the document with the `default_value` as the value.
+When `MongoList`/`MongoDict` is instantiated, it will check if the document exists in the MongoDB collection. If a document by this name already exists, the stored values will not be changed. If the document does not exist, it will be created using the `default_value` as the value.
 
 If you _want_ to overwrite the values using your default, you can run the following method:
 

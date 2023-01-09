@@ -3,7 +3,7 @@ name: Format code using Black
 on: [push, pull_request]
 
 jobs:
-  format-roboflo:
+  format-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

@@ -40,9 +40,9 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
-        #   # token: ${{ secrets.CODECOV_TOKEN }}
+          token: ${{ secrets.CODECOV_TOKEN }}
         #   directory: ./coverage/reports/
-          env_vars: OS,PYTHON
+          env_vars: PYTHON
           fail_ci_if_error: true
         #   files: ./coverage1.xml,./coverage2.xml
         #   flags: unittests
